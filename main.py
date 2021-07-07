@@ -21,7 +21,7 @@ dp = Dispatcher(bot, storage=storage)
 
 @dp.message_handler()
 async def cmd1_start(message: types.Message):
-  await bot.send.message(message.chat.id, 'TEST')
+  await bot.send_message(message.chat.id, 'TEST')
   
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
